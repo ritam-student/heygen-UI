@@ -6,3 +6,21 @@
 .hero-button {
     background: linear-gradient(to right , #7559FF , purple);
 }
+
+
+.moving-text {
+    animation-name: move-text;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes move-text {
+    from {
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}

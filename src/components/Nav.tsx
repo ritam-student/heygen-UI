@@ -32,7 +32,7 @@ export default function Nav() {
 
 
     return <div>
-        <div className="h-auto w-full bg-white text-black px-6  py-10 flex items-center justify-between text-lg fixed left-0 top-0 z-40 ">
+        <div className="h-auto w-full bg-white text-black px-4  py-10 flex items-center justify-between text-lg fixed left-0 top-0 z-40 ">
             {/**   left part   */}
             <div className="flex items-center justify-between w-auto gap-10 h-auto ">
                 {/**  heygen logo */}
@@ -396,7 +396,8 @@ export default function Nav() {
             {/**   right part  */}
             <div className="flex items-center justify-between gap-3 text-[13px]">
                 <div className="text-center rounded-3xl bg-gray-200 text-black  px-5 py-2 hover:text-[#A45BD2] cursor-pointer hidden lg:block">Login</div>
-                <div className="text-center rounded-3xl bg-black text-white text-sm px-5 font-bold py-2 hover:bg-[#A45BD2] cursor-pointer ">Sign up for free</div>
+                <div className="text-center rounded-3xl bg-black text-white text-sm px-5 font-bold py-2 hover:bg-[#A45BD2] cursor-pointer hidden md:block ">Sign up for free</div>
+                <div className="text-center rounded-3xl bg-black text-white text-sm px-5 font-bold py-2 hover:bg-[#A45BD2] cursor-pointer block md:hidden ">Sign up</div>
                 <div>
                     {
                         isMenueOpen ?
@@ -410,7 +411,7 @@ export default function Nav() {
         </div>
         {
             isMenueOpen &&
-            <div className="bg-white flex flex-col  justify-between gap-8 h-auto z-30 absolute w-full top-0 right-0 pt-32 pb-10 px-6 text-xl font-semibold text-black">
+            <div className="bg-white flex flex-col  justify-between gap-8 h-auto z-30 absolute w-full top-0 right-0 pt-32 pb-10 px-2 text-xl font-semibold text-black">
                 {/**  1. platform */}
                 <div className="relative ">
                     <div
@@ -423,7 +424,7 @@ export default function Nav() {
                             setCurrentOpenTab(1)
                         }
                     }}
-                    className="relative  cursor-pointer flex items-center justify-between gap-2">
+                    className="relative  cursor-pointer flex items-center justify-between gap-2 px-2">
                         <h3 className={` ${currentOpenTab === 1 ? "text-violet-500" : "text-black"}`}>Platform</h3>
                         {
                             currentOpenTab === 1 ?
@@ -494,7 +495,7 @@ export default function Nav() {
                             setCurrentOpenTab(2)
                         }
                     }}
-                    className="cursor-pointer flex items-center justify-between gap-2">
+                    className="cursor-pointer flex items-center justify-between gap-2 px-2">
                         <h3 className={` ${currentOpenTab === 2 ? "text-violet-500" : "text-black"}`}>Solutions</h3>
                         {
                             currentOpenTab === 2 ?
@@ -507,55 +508,51 @@ export default function Nav() {
                     {
                         currentOpenTab === 2 
                         &&
-                        <div className="mt-4 rounded-3xl px-4 py-4 w-full bg-white h-auto text-lg ">
+                        <div className="mt-4  rounded-3xl  py-4 w-full bg-white h-auto text-lg ">
                             <div className="h-auto w-full">
                                 
-                                <div className="flex items-center justify-between h-auto w-full  ">
-                                    <h4 className=" h-auto text-gray-400 font-bold w-1/3">INDUSTRY</h4>
-                                    <h4 className="  h-auto text-gray-400 font-bold w-1/3 ">TEAMS</h4>
-                                    <h4 className="  h-auto text-gray-400 font-bold w-1/3 ">USE CASES</h4>
-                                </div>
-                                <div className="flex items-start mt-4 justify-between h-auto w-full font-semibold text-[16px] ">
+                                
+                                <div className="flex items-start mt-4 justify-between h-auto w-full font-semibold text-sm ">
                                     <div className="w-1/3 h-auto flex flex-col justify-between gap-4 ">
                                         <div className="flex items-center justify-start gap-1">
-                                            <FiUsers className="text-violet-500 text-lg" />    
+                                            <FiUsers className="text-violet-500 text-[16px]" />    
                                             <p>Agencies</p>
                                         </div>
                                         
                                         <div className="flex items-center justify-start gap-1">
-                                            <FiBookOpen className="text-violet-500 text-lg" />
+                                            <FiBookOpen className="text-violet-500 text-[16px]" />
                                             <p>E-Learning</p>
                                         </div>
                                         
                                     </div>
 
-                                    <div className="w-1/3 h-auto flex flex-col justify-between gap-4 ">
+                                    <div className="w-1/3 h-auto flex flex-col justify-between gap-4 text-sm ">
 
                                         <div className="flex items-center justify-start gap-1">
-                                            <HiSpeakerphone className="text-violet-500 text-lg" />
+                                            <HiSpeakerphone className="text-violet-500 text-[16px]" />
                                             <p>Marketing</p>
                                         </div>
                                         
-                                        <div className="flex items-center justify-start gap-1">
-                                            <IoLocationOutline className="text-violet-500 text-lg" />
-                                            <p>Localization</p>
+                                        <div className="flex items-center justify-start gap-0.5">
+                                            <IoLocationOutline className="text-violet-500 text-[18px]" />
+                                            <p className="text-[13px]">Localization</p>
                                         </div>
 
                                         <div className="flex items-center justify-start gap-1">
-                                            <LuShoppingBag className="text-violet-500 text-lg" />
+                                            <LuShoppingBag className="text-violet-500 text-[16px]" />
                                             <p>Sales Outreach</p>
                                         </div>
                                         
                                     </div>
 
-                                    <div className="w-1/3 h-auto flex flex-col justify-between gap-4 ">
+                                    <div className="w-1/3 h-auto flex flex-col justify-between gap-4 text-sm">
                                         <div className="flex items-center justify-start gap-1">
-                                            <CiVideoOn className="text-violet-500 text-lg" />    
+                                            <CiVideoOn className="text-violet-500 text-[16px]" />    
                                             <p>Video Ads</p>
                                         </div>
                                         
                                         <div className="flex items-center justify-start gap-1">
-                                            <SlSocialInstagram className="text-violet-500 text-lg" />
+                                            <SlSocialInstagram className="text-violet-500 text-[14px]" />
                                             <p>Social Media</p>
                                         </div>
                                         
@@ -578,7 +575,7 @@ export default function Nav() {
                             setCurrentOpenTab(3)
                         }
                     }}
-                    className="cursor-pointer flex items-center justify-between gap-2">
+                    className="cursor-pointer flex items-center justify-between gap-2 px-2">
                         <h3 className={` ${currentOpenTab === 3 ? "text-violet-500" : "text-black"}`}>Resources</h3>
                         {
                             currentOpenTab === 3 ?
@@ -591,51 +588,51 @@ export default function Nav() {
                     {
                         currentOpenTab === 3 
                         &&
-                        <div className="mt-4  rounded-3xl px-4 py-4 w-full bg-white h-auto text-lg ">
+                        <div className="mt-4  rounded-3xl  py-4 w-full bg-white h-auto text-lg ">
                             <div className="h-auto w-full">
                                 
                                 
-                                <div className="flex items-start mt-4 justify-between h-auto w-full font-semibold text-[16px] ">
+                                <div className="flex items-start mt-4 justify-between h-auto w-full font-semibold text-sm ">
                                     <div className="w-1/3 h-auto flex flex-col justify-between gap-4 ">
                                         <div className="flex items-center justify-start gap-1">
-                                            <FiUsers className="text-violet-500 text-lg" />    
+                                            <FiUsers className="text-violet-500 text-[16px]" />    
                                             <p>Agencies</p>
                                         </div>
                                         
                                         <div className="flex items-center justify-start gap-1">
-                                            <FiBookOpen className="text-violet-500 text-lg" />
+                                            <FiBookOpen className="text-violet-500 text-[16px]" />
                                             <p>E-Learning</p>
                                         </div>
                                         
                                     </div>
 
-                                    <div className="w-1/3 h-auto flex flex-col justify-between gap-4 ">
+                                    <div className="w-1/3 h-auto flex flex-col justify-between gap-4 text-sm ">
 
                                         <div className="flex items-center justify-start gap-1">
-                                            <HiSpeakerphone className="text-violet-500 text-lg" />
+                                            <HiSpeakerphone className="text-violet-500 text-[16px]" />
                                             <p>Marketing</p>
                                         </div>
                                         
-                                        <div className="flex items-center justify-start gap-1">
-                                            <IoLocationOutline className="text-violet-500 text-lg" />
-                                            <p>Localization</p>
+                                        <div className="flex items-center justify-start gap-0.5">
+                                            <IoLocationOutline className="text-violet-500 text-[18px]" />
+                                            <p className="text-[13px]">Localization</p>
                                         </div>
 
                                         <div className="flex items-center justify-start gap-1">
-                                            <LuShoppingBag className="text-violet-500 text-lg" />
+                                            <LuShoppingBag className="text-violet-500 text-[16px]" />
                                             <p>Sales Outreach</p>
                                         </div>
                                         
                                     </div>
 
-                                    <div className="w-1/3 h-auto flex flex-col justify-between gap-4 ">
+                                    <div className="w-1/3 h-auto flex flex-col justify-between gap-4 text-sm">
                                         <div className="flex items-center justify-start gap-1">
-                                            <CiVideoOn className="text-violet-500 text-lg" />    
+                                            <CiVideoOn className="text-violet-500 text-[16px]" />    
                                             <p>Video Ads</p>
                                         </div>
                                         
                                         <div className="flex items-center justify-start gap-1">
-                                            <SlSocialInstagram className="text-violet-500 text-lg" />
+                                            <SlSocialInstagram className="text-violet-500 text-[14px]" />
                                             <p>Social Media</p>
                                         </div>
                                         
@@ -658,7 +655,7 @@ export default function Nav() {
                             setCurrentOpenTab(4)
                         }
                     }}
-                    className="cursor-pointer flex items-center justify-between gap-2">
+                    className="cursor-pointer flex items-center justify-between gap-2 px-2">
                         <h3 className={` ${currentOpenTab === 4 ? "text-violet-500" : "text-black"}`}>Pricing</h3>
                         {
                             currentOpenTab === 4 ?
@@ -677,12 +674,12 @@ export default function Nav() {
                                 
                                 <div className="flex items-start mt-4 justify-between h-auto w-full font-semibold text-[16px] ">
                                     <div className="w-full h-auto flex flex-col justify-between gap-4 ">
-                                        <div className="flex items-center justify-start gap-1">
+                                        <div className="flex items-center justify-start gap-2">
                                             <PiNotePencil className="text-violet-500 text-lg" />    
                                             <p>Pricing Plans</p>
                                         </div>
                                         
-                                        <div className="flex items-center justify-start gap-1">
+                                        <div className="flex items-center justify-start gap-2">
                                             <AiOutlineDollarCircle className="text-violet-500 text-lg" />
                                             <p>API Pricing</p>
                                         </div>
@@ -698,7 +695,7 @@ export default function Nav() {
 
                 {/**  Enterprise */}
                 <div className="">
-                    <div className="cursor-pointer flex items-center justify-between gap-2 ">
+                    <div className="cursor-pointer flex items-center justify-between gap-2 px-2">
                         <h3>Enterprise</h3>
                     </div>
                 </div>
@@ -715,7 +712,7 @@ export default function Nav() {
                             setCurrentOpenTab(5)
                         }
                     }}
-                    className="cursor-pointer flex items-center justify-between gap-2">
+                    className="cursor-pointer flex items-center justify-between gap-2 px-2">
                         <h3 className={` ${currentOpenTab === 5 ? "text-violet-500" : "text-black"}`}>Company</h3>
                         {
                             currentOpenTab === 5 ?
@@ -734,22 +731,22 @@ export default function Nav() {
                                 
                                 <div className="flex items-start mt-4 justify-between h-auto w-full font-semibold text-[16px] ">
                                     <div className="w-full h-auto flex flex-col justify-between gap-4 ">
-                                        <div className="flex items-center justify-start gap-1">
+                                        <div className="flex items-center justify-start gap-2">
                                             <FiHome className="text-violet-500 text-lg" />    
                                             <p>About Us</p>
                                         </div>
                                         
-                                        <div className="flex items-center justify-start gap-1">
+                                        <div className="flex items-center justify-start gap-2">
                                             <IoBagSharp className="text-violet-500 text-lg" />
                                             <p>Careers</p>
                                         </div>
 
-                                        <div className="flex items-center justify-start gap-1">
+                                        <div className="flex items-center justify-start gap-2">
                                             <IoMdEye className="text-violet-500 text-lg" />
                                             <p>Trust & Safety</p>
                                         </div>
 
-                                        <div className="flex items-center justify-start gap-1">
+                                        <div className="flex items-center justify-start gap-2">
                                             <VscSparkleFilled className="text-violet-500 text-lg" />
                                             <p>AI Research</p>
                                         </div>
