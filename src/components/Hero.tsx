@@ -57,7 +57,7 @@ export default function Hero() {
             </div>
         </div>
 
-        <div className="text-center font-medium text-[15px]  md:text-lg py-4">
+        <div className="text-center font-medium text-[15px]  md:text-lg py-10">
             <h3>Trusted by over <span className="font-bold">85,000+ customers</span></h3>
         </div>
     </div>

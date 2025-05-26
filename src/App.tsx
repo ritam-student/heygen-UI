@@ -2,6 +2,7 @@
 import './App.css'
 import Hero from './components/Hero'
 import Nav from './components/Nav'
+import Part1 from './components/Part1'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <div>
       <Nav />
       <Hero />
+      <Part1 />
     </div>
   )
 }

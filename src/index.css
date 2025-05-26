@@ -24,3 +24,8 @@
         transform: translateX(-50%);
     }
 }
+
+
+.mixed-color {
+    background: linear-gradient(#E8E2FA , white);
+}
