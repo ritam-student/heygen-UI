@@ -59,7 +59,7 @@ export default function Part3() {
                     </div>
                     <p className="mt-10 text-lg ">“We did tests with other companies and HeyGen was always on top for quality. We were very transparent with their team from the start because we were in a high-risk high-reward situation where we were doing this for the first time and were really trusting with them and it paid off entirely.”</p>
                     <p className="mt-6">João Laureano, Creative Director</p>
-                    <p className="mt-10">Read trivago's full case study</p>
+                    <p className="mt-10 text-violet-500">Read trivago's full case study</p>
                 </div>
             </div>
         </div>
