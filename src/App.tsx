@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Nav from './components/Nav'
 import Part1 from './components/Part1'
 import Part2 from './components/Part2'
+import Part3 from './components/Part3'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <Part1 />
       <Part2 />
+      <Part3 />
       <Footer />
     </div>
   )

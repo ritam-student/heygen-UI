@@ -27,9 +27,13 @@
 
 
 .mixed-color {
-    background: linear-gradient(#E8E2FA , white);
+    background: linear-gradient(#E8E2FA , #FBFAF9);
 }
 
 .moving-box-container::-webkit-scrollbar {
     display: none;
+}
+
+.part3-div {
+    background: linear-gradient(white , #E2EFFF);
 }

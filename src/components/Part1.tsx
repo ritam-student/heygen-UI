@@ -1,10 +1,10 @@
 
 
 export default function Part1() {
-    return <div className="w-full h-auto relative overflow-hidden">
+    return <div className="w-full h-auto relative overflow-hidden bg-[#FBFAF9]">
         <div className="mixed-color absolute h-[150px] md:h-[200px] w-auto inset-0 "></div>
-        <div className="absolute -top-3 -left-36 md:-left-20 h-[250px] w-[200px] rounded-br-[100%] bg-white blur-[2px]  "></div>
-        <div className="absolute -top-3 -right-36 md:-right-20 h-[250px] w-[200px] rounded-bl-[100%] bg-white blur-[2px]  "></div>
+        <div className="absolute -top-3 -left-36 md:-left-20 h-[250px] w-[200px] rounded-br-[100%] bg-[#FBFAF9] blur-[2px]  "></div>
+        <div className="absolute -top-3 -right-36 md:-right-20 h-[250px] w-[200px] rounded-bl-[100%] bg-[#FBFAF9] blur-[2px]  "></div>
         <div className="bg-transparent flex items-center justify-center relative h-full w-full py-16 md:py-36">
             <div className="flex flex-col items-center justify-center">
                 <h4 className=" flex items-center justify-center  gap-3 font-semibold text-gray-500 text-lg">

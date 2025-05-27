@@ -13,7 +13,7 @@ import { Pagination } from 'swiper/modules';
 
 
 export default function Part2() {
-    return <div className='py-10 px-4 sm:px-8 md:px-10 lg:px-16 xl:px-20'>
+    return <div className='py-10 px-4 sm:px-8 md:px-10 lg:px-16 xl:px-20 bg-[#FBFAF9]'>
         <div className=" py-16 md:py24 lg:py-28 ml-4 w-[75%] md:w-1/2 text-lg font-semibold">
             <span className="font-bold">AI Avatars for any use case.</span> Whether for presentations, tutorials, or marketing, AI avatars bring your content to life with realistic movements and expressions.
         </div>
