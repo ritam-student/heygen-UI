@@ -1,5 +1,6 @@
 
 import './App.css'
+import Faq from './components/FAQ'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Nav from './components/Nav'
@@ -20,6 +21,7 @@ function App() {
       <Part3 />
       <Part4 />
       <Part5 />
+      <Faq />
       <Footer />
     </div>
   )
