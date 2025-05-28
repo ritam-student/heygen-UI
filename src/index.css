@@ -37,3 +37,7 @@
 .part3-div {
     background: linear-gradient(white , #E2EFFF);
 }
+
+.mixed-color1 {
+    background: linear-gradient(#2D2651 , #1D1B2A);
+}

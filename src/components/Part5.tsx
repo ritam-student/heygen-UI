@@ -2,8 +2,8 @@
 export default function Part5() {
     return <div className="w-full h-auto relative overflow-hidden bg-[#FBFAF9]">
         <div className="mixed-color absolute h-[150px] md:h-[200px] w-auto inset-0 "></div>
-        <div className="absolute -top-3 -left-36 md:-left-20 h-[250px] w-[200px] rounded-br-[100%] bg-[#FBFAF9] blur-[2px]  "></div>
-        <div className="absolute -top-3 -right-36 md:-right-20 h-[250px] w-[200px] rounded-bl-[100%] bg-[#FBFAF9] blur-[2px]  "></div>
+        <div className="absolute -top-3 -left-36 md:-left-20 h-[250px] w-[200px] rounded-br-[100%] bg-[#FBFAF9] blur-[15px]  "></div>
+        <div className="absolute -top-3 -right-36 md:-right-20 h-[250px] w-[200px] rounded-bl-[100%] bg-[#FBFAF9] blur-[15px]  "></div>
         <div className="bg-transparent flex items-center justify-center relative h-full w-full py-16 md:py-36">
             <div className="flex flex-col items-center justify-center">
                 <h4 className=" flex items-center justify-center  gap-3 font-semibold text-gray-500 text-lg">
@@ -26,11 +26,11 @@ export default function Part5() {
                     <h4 className="text-center text-gray-400 text-sm md:text-lg">Case Study: Würth Group Key Results</h4>
                     <div className="flex items-center flex-col justify-center gap-20  mt-10">
                         <div>
-                            <h2 className="text-4xl font-bold md:text-5xl text-center">80%</h2>
+                            <h2 className="text-6xl font-bold md:text-5xl text-center">80%</h2>
                             <p className="mt-2 text-gray-400 text-sm md:text-lg">Reduction in video translation costs</p>
                         </div>
                         <div>
-                            <h2 className="text-4xl font-bold md:text-5xl text-center">{"< 45 Mins"}</h2>
+                            <h2 className="text-6xl font-bold md:text-5xl text-center">{"< 45 Mins"}</h2>
                             <p className="mt-2 text-gray-400 text-sm md:text-lg text-center">To train employees on HeyGen</p>
                         </div>
                     </div>

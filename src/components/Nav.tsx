@@ -395,7 +395,7 @@ export default function Nav() {
 
             {/**   right part  */}
             <div className="flex items-center justify-between gap-3 text-[13px]">
-                <div className="text-center rounded-3xl bg-gray-200 text-black  px-5 py-2 hover:text-[#A45BD2] cursor-pointer hidden lg:block">Login</div>
+                <div className="text-center rounded-3xl bg-gray-200 text-black font-bold px-5 py-2 hover:text-[#A45BD2] cursor-pointer hidden lg:block">Login</div>
                 <div className="text-center rounded-3xl bg-black text-white text-sm px-5 font-bold py-2 hover:bg-[#A45BD2] cursor-pointer hidden md:block ">Sign up for free</div>
                 <div className="text-center rounded-3xl bg-black text-white text-sm px-5 font-bold py-2 hover:bg-[#A45BD2] cursor-pointer block md:hidden ">Sign up</div>
                 <div>
@@ -411,7 +411,7 @@ export default function Nav() {
         </div>
         {
             isMenueOpen &&
-            <div className="bg-white fixed top-0 left-0 z-40 w-full h-auto mt-36 pb-10 px-2">
+            <div className="bg-white fixed top-0 left-0 z-40 w-full h-auto mt-28 pb-10 px-2">
                 <div className=" flex flex-col  justify-between gap-8 h-auto  w-full text-xl font-semibold text-black">
                     {/**  1. platform */}
                     <div className="relative ">
