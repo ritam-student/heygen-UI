@@ -25,39 +25,39 @@ export default function Part4() {
         {/**   video section   */}
         <div className="w-full h-auto py-10 px-4 sm:px-8 md:px-10 lg:px-16 xl:px-20">
             <div className="relative">
-                <div className="h-auto w-auto overflow-hidden rounded-3xl">
+                <div className="h-[400px] md:h-auto w-auto overflow-hidden rounded-3xl">
                     {
                         currentVideo === 1 ?
-                        <video src="/video/English.webm" loop muted autoPlay className="object-cover" ></video>
+                        <video src="/video/English.webm" loop muted autoPlay className="object-cover h-full w-full" ></video>
                         :
                             currentVideo === 2 ?
-                            <video src="/video/spanish.webm" loop muted autoPlay className="object-cover"></video>
+                            <video src="/video/spanish.webm" loop muted autoPlay className="object-cover h-full w-full"></video>
                             :
                                 currentVideo === 3 ?
-                                <video src="/video/chinese.webm" loop muted autoPlay className="object-cover"></video>
+                                <video src="/video/chinese.webm" loop muted autoPlay className="object-cover h-full w-full"></video>
                                 :
                                     currentVideo === 4 ?
-                                    <video src="/video/german.webm" loop muted autoPlay className="object-cover"></video>
+                                    <video src="/video/german.webm" loop muted autoPlay className="object-cover h-full w-full"></video>
                                     :
-                                    <video src="/video/french.webm" loop muted autoPlay className="object-cover"></video>
+                                    <video src="/video/french.webm" loop muted autoPlay className="object-cover h-full w-full"></video>
                     }
                 </div>
-                <div className="absolute  bottom-[20%] md:bottom-[10%] left-[50%] translate-x-[-50%] flex items-center justify-center gap-3 md:gap-6 flex-wrap w-full h-auto">
+                <div className="absolute  bottom-[10%] left-[50%] translate-x-[-50%] flex items-center justify-center gap-3 md:gap-6 flex-wrap w-full h-auto">
                     <div 
                     onClick={() => setCurrentVideo(1)}
-                    className={`cursor-pointer border-2 ${currentVideo === 1 ? "bg-[#7559FF] text-white border-white" : "bg-white text-black"} md:px-4 px-1 py-3 text-center text-lg font-semibold rounded-lg  `}>English</div>
+                    className={`cursor-pointer border-2 ${currentVideo === 1 ? "bg-[#7559FF] text-white border-white" : "bg-white text-black"} md:px-4 px-1 py-3 text-center text-sm md:text-lg font-semibold rounded-lg  `}>English</div>
                     <div 
                     onClick={() => setCurrentVideo(2)}
-                    className={`cursor-pointer border-2 ${currentVideo === 2 ? "bg-[#7559FF] text-white border-white" : "bg-white text-black"} md:px-4 px-1 py-3 text-center text-lg font-semibold rounded-lg  `}>Spanish</div>
+                    className={`cursor-pointer border-2 ${currentVideo === 2 ? "bg-[#7559FF] text-white border-white" : "bg-white text-black"} md:px-4 px-1 py-3 text-center text-sm md:text-lg font-semibold rounded-lg  `}>Spanish</div>
                     <div 
                     onClick={() => setCurrentVideo(3)}
-                    className={`cursor-pointer border-2 ${currentVideo === 3 ? "bg-[#7559FF] text-white border-white" : "bg-white text-black"} md:px-4 px-1 py-3 text-center text-lg font-semibold rounded-lg  `}>Chinese</div>
+                    className={`cursor-pointer border-2 ${currentVideo === 3 ? "bg-[#7559FF] text-white border-white" : "bg-white text-black"} md:px-4 px-1 py-3 text-center text-sm md:text-lg font-semibold rounded-lg  `}>Chinese</div>
                     <div 
                     onClick={() => setCurrentVideo(4)}
-                    className={`cursor-pointer border-2 ${currentVideo === 4 ? "bg-[#7559FF] text-white border-white" : "bg-white text-black"} md:px-4 px-1 py-3 text-center text-lg font-semibold rounded-lg  `}>German</div>
+                    className={`cursor-pointer border-2 ${currentVideo === 4 ? "bg-[#7559FF] text-white border-white" : "bg-white text-black"} md:px-4 px-1 py-3 text-center text-sm md:text-lg font-semibold rounded-lg  `}>German</div>
                     <div 
                     onClick={() => setCurrentVideo(5)}
-                    className={`cursor-pointer border-2 ${currentVideo === 5 ? "bg-[#7559FF] text-white border-white" : "bg-white text-black"} md:px-4 px-1 py-3 text-center text-lg font-semibold rounded-lg  `}>French</div>
+                    className={`cursor-pointer border-2 ${currentVideo === 5 ? "bg-[#7559FF] text-white border-white" : "bg-white text-black"} md:px-4 px-1 py-3 text-center text-sm md:text-lg font-semibold rounded-lg  `}>French</div>
                 </div>
             </div>
         </div>

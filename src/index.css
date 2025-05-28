@@ -5,6 +5,11 @@
 
 .hero-button {
     background: linear-gradient(to right , #7559FF , purple);
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background: linear-gradient(to right , #7b3aaa , #33a3bf);
 }
 
 
@@ -28,6 +33,10 @@
 
 .mixed-color {
     background: linear-gradient(#E8E2FA , #FBFAF9);
+}
+
+.mixed-color:hover {
+    background: linear-gradient(#7b3aaa , #33a3bf);
 }
 
 .moving-box-container::-webkit-scrollbar {
