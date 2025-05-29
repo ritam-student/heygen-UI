@@ -10,10 +10,13 @@ import Part3 from './components/Part3'
 import Part4 from './components/Part4'
 import Part5 from './components/Part5'
 import Part6 from './components/Part6'
+import SmoothScroll from './components/SmoothScroll'
 
 function App() {
 
   return (
+    <>
+    <SmoothScroll />
     <div>
       <Nav />
       <Hero />
@@ -26,6 +29,8 @@ function App() {
       <Faq />
       <Footer />
     </div>
+    
+    </>
   )
 }
 
